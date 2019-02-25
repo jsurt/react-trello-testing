@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: Yyjk+S4a7JCS/tcShuwhTYtrYzLwlh9/zpX10ngEoSDw+MmFK5HVCWfohNgJFrvJwEAQxXl78PTO875S6BhiUQmU3rqH9MCDARN5dsI1xJiMkPraVh+F8NCmVJScTsUT1sIyGDA3WkBTnkGhMoZ9w8GbN/EW9/6SAnP6+OjwIQk6iET/dEmj9Bfxp/dSGRmiN7kuqdgtPECBUL22QMPiWjXheZ298Y6jLADJ0QGRF5PS+Ry142Ad7KvIXZy2eN+H3TS5qnuRvI9KR5TxAQLuNVvKJAoyxtKRSePKVm+zvoeOMdLKBziLTev0bYYiH7hHbzqIZ7DhtKGbNpBCUvvjZFW2pCW1y4YZKFtLTz03PGxF54F2qfMcDtq+K29n9yjGEc56wxoLXrlwFUM81GFbgI2q5+83r0M0KzWHmbdJTL9XfDG67qMqR0di6Mw7m75I9gzZI08y/5EjGtF5eoqmXPwOIMCen+Epy0uOGVWrIOyrnXZZ6S5LU8AU0VE236WAeLHkOvwgNgs2ksm0V/xwrLXUs+gMfbXPjYcwwwc9xjscFyAnM3i5YRtBDOzOUNbnfkkt4vhefUU8QDbUvd2CSUb+Aoj417PR9wIKVLzkVJQQzRJFUyj2IUAo2jwGuKoJ5OBuimH4ucYr0N4dNa2OTctbwtKiapZkEthYFWJCR/I=
+  app: enigmatic-everglades-76092
+  on:
+    repo: jsurt/react-trello-testing
